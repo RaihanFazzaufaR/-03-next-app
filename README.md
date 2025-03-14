@@ -59,3 +59,93 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
         <td>17</td>
     </tr>
 </table>
+
+### 1. Pesiapan Lingkungan
+1. Pastikan Node.js dan npm sudah terinstal di komputer Anda. Anda dapat memeriksanya dengan menjalankan perintah berikut di terminal atau command prompt:
+
+!['1-1.png'](/screenshots/1-1.png)
+
+2. Buat direktori baru untuk proyek Next.js Anda 
+
+!['1-2.png'](/screenshots/1-2.png)
+
+3. Inisialisasi proyek Next.js dengan menjalankan perintah berikut: Perhatikan bahwa App Router 
+belum digunakan
+
+!['1-3.png'](/screenshots/1-3.png)
+
+4. Jalankan aplikasi Next.js dengan perintah:
+
+!['1-4.png'](/screenshots/1-4.png)
+
+Aplikasi akan terbuka di browser pada alamat http://localhost:3000.
+
+!['1-5.png'](/screenshots/1-5.png)
+
+### 2. Membuat Halaman dengan Server-Side Rendering  (SSR)
+1. Buka file pages/index.tsx di text editor Anda.
+
+2. Ganti kode di dalamnya dengan kode berikut untuk membuat halaman sederhana:
+
+!['2-2.png'](/screenshots/2-2.png)
+
+3. Simpan file dan lihat perubahan di browser. Anda akan melihat halaman utama dengan teks "Selamat Datang di Website Saya!".
+
+!['2-3.png'](/screenshots/2-3.png)
+
+### 3. Menggunakan Static Site Generation (SSG)
+1. Buat file baru di direktori pages dengan nama blog.js.
+
+2. Tambahkan kode berikut untuk membuat halaman blog dengan SSG:
+
+!['3-2.png'](/screenshots/3-2.png)
+
+3. Simpan file dan buka http://localhost:3000/blog di browser. Anda akan melihat daftar post yang diambil dari API eksternal. 
+
+!['3-3.png'](/screenshots/3-3.png)
+
+### 4. Menggunakan Dynamic Routes
+1. Buat direktori baru di pages dengan nama blog.
+
+2. Buat file di dalam direktori blog dengan nama ``[slug].js`` 
+
+3. Tambahkan kode berikut untuk membuat halaman dinamis berdasarkan slug: 
+
+!['4-2.png'](/screenshots/4-2.png)
+
+4. Simpan file dan buka http://localhost:3000/blog/contoh-post di browser. Anda akan melihat halaman yang menampilkan slug dari URL.
+
+!['4-3.png'](/screenshots/4-3.png)
+
+### 5. Menggunakan API Routes
+1. Pastikan terdapat direktori di pages dengan nama api. 
+
+2. Buat file di dalam direktori api dengan nama products.js.
+
+3. Tambahkan kode berikut untuk membuat API route yang mengembalikan daftar produk: 
+
+!['5-3.png'](/screenshots/5-3.png)
+
+4. Buat file baru di pages dengan nama products.js untuk menampilkan daftar produk:
+
+!['5-4.png'](/screenshots/5-4.png)
+
+5. Simpan file dan buka http://localhost:3000/products di browser. Anda akan melihat daftar 
+produk yang diambil dari API route.
+
+!['5-5.png'](/screenshots/5-5.png)
+
+### 6. Menggunakan Link Component 
+1. Buka file pages/index.tsx dan tambahkan modif dengan kode berikut untuk membuat link ke halaman lain:
+
+!['6-1.png'](/screenshots/6-1.png)
+
+2. Buat file baru di pages dengan nama about.js untuk halaman "Tentang Kami":
+
+!['6-2.png'](/screenshots/6-2.png)
+
+3. Simpan file dan buka http://localhost:3000 di browser. Klik link "Tentang Kami" untuk navigasi ke halaman tentang. 
+
+!['6-3-1.png'](/screenshots/6-3-1.png)
+
+!['6-3-2.png'](/screenshots/6-3-2.png)
